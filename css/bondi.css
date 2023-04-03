@@ -1,0 +1,254 @@
+:root {
+    --btr-color: #19283f;
+    --one-color: #33d1cc;
+    --orange-color: #ff3150;
+    --tex-color: #ffc400;
+    --section-color: #eff7fa;
+
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    /* height: 10000px; */
+
+}
+
+.main-btn {
+    background-color: var(--orange-color);
+    color: #ffc400;
+}
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    position: absolute;
+    background-color: var(--one-color);
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+/* start navbar */
+.navbar {
+    background-color: var(--btr-color);
+
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--one-color);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--one-color);
+
+}
+
+.navbar .search svg {
+    color: var(--one-color);
+}
+
+.navbar .btn {
+    background-color: var(--orange-color);
+    border-color: var(--orange-color);
+    color: var(--tex-color);
+
+}
+
+/* End navbar */
+
+/* Start landing */
+.landing {
+    background-color: var(--btr-color);
+    min-height: calc(100vh - 72px);
+}
+
+/* End landing */
+/* Start featurs */
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--one-color);
+}
+
+.features .feat {
+    color: var(--tex-color);
+}
+
+/* End featurs */
+/* Start work section */
+.work-section {
+    background-color: var(--section-color);
+}
+
+.work-section ul .active {
+    background-color: var(--orange-color);
+    color: var(--tex-color);
+}
+
+.work-section ul li {
+    padding: .5rem 1rem;
+
+}
+
+.work-section ul li:not(.active):hover {
+    color: var(--orange-color);
+}
+
+.work-section .box {
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+.work-section .box::before {
+    content: attr(data-work);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgb(51 209 204 / 57%);
+    position: absolute;
+    left: 0;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transform: translateX(calc(-100% - 5px));
+    -webkit-transform: translateX(calc(-100% - 5px));
+    -moz-transform: translateX(calc(-100% - 5px));
+    -ms-transform: translateX(calc(-100% - 5px));
+    -o-transform: translateX(calc(-100% - 5px));
+    color: white;
+    font-size: 30px;
+}
+
+.work-section .box:hover:before {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+/* End work section */
+
+/* Start Stuff */
+.stuff .description {
+    max-width: 500px;
+}
+
+/* End Stuff */
+/* Start meet */
+.meet {
+    background-color: var(--section-color);
+
+}
+
+.meet .desc h2 {
+    color: var(--tex-color);
+}
+
+.row p {
+    padding: 1rem .5rem;
+    width: 100%;
+}
+
+.meet .row h4 {
+    background-color: var(--one-color);
+    color: white;
+}
+
+/* End meet */
+/* Start tech */
+.tech .start-project {
+    background-color: var(--btr-color);
+}
+
+/* End tech */
+/* Start Subscribe */
+.Subscribe {
+    background-color: #ffc400;
+}
+
+.Subscribe input[type="text"] {
+
+    border: none;
+    border-bottom: 1px solid white;
+
+}
+
+.Subscribe input[type="text"]:focus {
+    outline: none;
+}
+
+.Subscribe input[type="submit"] {
+    background-color: var(--btr-color);
+    border: none;
+    color: #ffc400;
+}
+
+.Subscribe ::placeholder {
+    color: white;
+}
+
+/* End Subscribe */
+/* Start footer */
+.footer {
+    background-color: var(--btr-color);
+}
+
+.footer .copyright>span {
+    color: var(--one-color);
+}
+
+.footer .copyright div span {
+    color: var(--tex-color);
+}
+
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer .facebook {
+    background-color: #1877f2;
+}
+
+.footer .twitter {
+    background-color: #1da1f2;
+}
+
+.footer .linkedin {
+    background-color: #0a66c2;
+}
+
+.footer .youtube {
+    background-color: #ff0000;
+}
+
+
+/* End footer */
